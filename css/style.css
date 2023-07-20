@@ -1,0 +1,52 @@
+h1{
+    font-family: 'Belanosima', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF5F5;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: #00425A;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #FC7300;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #1F8A70;
+}
+
+
+@media (max-width:920px) {
+    header{
+        flex-direction: column;
+    }
+    
+}
+
+
