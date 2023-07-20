@@ -1,5 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     font-family: 'Belanosima', sans-serif;
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.2em;
+}
+
+#contacto{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration:underline;
+    font-size: 2em; 
+}
+
+#contacto:hover{
+    color:#FC7300;
+}
+
+button{
+    font-size: 1.5em;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 10px;
+background-color:#00425A;
+color: #FC7300;
+}
+
+input#boton{
+font-size: 1.5em;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 10px;
+background-color:#00425A;
+color: #FC7300;
+}
+
+input#boton:hover{
+    background-color: #1F8A70;
 }
 
 body {
@@ -8,14 +68,6 @@ body {
     margin: 0;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    min-height: 70px;
-    background-color: #00425A;
-    align-items: center;
-    padding: 10px;
-}
 
 .logo{
     display: flex;
@@ -27,26 +79,131 @@ header{
     margin-right: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: #FC7300;
+.container{
+    max-width: 1400px;
+    margin: auto;
 }
 
-nav a{
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.35em;
+
+}
+
+header a{
     font-weight: 600;
-    padding-right: 10px;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #FC7300;
 }
 
 nav a:hover{
     color: #1F8A70;
 }
 
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
 
-@media (max-width:920px) {
-    header{
-        flex-direction: column;
-    }
+header{
+    background-color: #00425A;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/biblioteca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#prop-educativa{
+    text-align: center;
+    color: white;
+}
+
+#prop-educativa h2{
+    margin-top: 0;
+    color: black;
+    font-size: 3.2em;
+}
+
+#prop-educativa p{
+    display: none;
+     
+}
+
+#prop-educativa .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#prop-educativa .container{
+    padding: 100px 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/kids.jpg");
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/books.jpg");
+    
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/secundaria.jpg");
     
 }
 
 
+#porque-elegirnos{
+    
+}

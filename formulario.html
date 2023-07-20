@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>UntrefSchool</title>
+    <link rel="shortcut icon" sizes="16x16" href="imagenes/escuelaicon.png">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">
+        <img src="/imagenes/colegiologo.png" alt="logo de la institucion">
+        <h2 class="nombre-escuela">UNTREFSCHOOL</h2>
+        </a>
+</header>
+
+
+    <form action="https://formsubmit.co/lucas.pucheta01@gmail.com" method="POST">
+        <div class="datos-form">
+            <div class="nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="boton-form">
+                <input type="submit" value="Enviar" id="boton">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+
+        </div>
+    </form>
+    
+</body>
+</html>
