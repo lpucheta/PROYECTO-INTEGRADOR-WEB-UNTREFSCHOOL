@@ -214,7 +214,7 @@ header{
 
 #porque-elegirnos h2{
     
-    margin: 0;
+    margin-left: 40px;
 }
 
 #porque-elegirnos li{
@@ -340,6 +340,102 @@ textarea{
 
 /* Version para escritorio */
 
+@media (min-width: 768px){
 
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#quienes-somos .container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#quienes-somos .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quienes-somos .img-container{
+    background-image: url("/imagenes/escuelafuera.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+
+#prop-educativa .programas{
+display: flex;
+justify-content: center;
+}
+
+#prop-educativa p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#prop-educativa .carta{
+padding: 15px;
+}
+
+#porque-elegirnos .container{
+text-align: initial;
+display: flex;
+    justify-content: center;
+}
+
+#porque-elegirnos h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5em;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#porque-elegirnos ul{
+margin-left: 50px;
+}
+
+#porque-elegirnos li{
+    width: 90%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#porque-elegirnos .img-graduacion{
+    background-image: url("/imagenes/graduacion.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+
+
+}
 
 
