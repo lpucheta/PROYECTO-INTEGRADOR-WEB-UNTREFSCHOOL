@@ -8,10 +8,10 @@ html{
 
 h1{
     font-family: 'Belanosima', sans-serif;
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 h2{
-    font-size: 2.7em;
+    font-size: 2.0em;
 }
 h3{
     font-size: 2em;
@@ -143,6 +143,7 @@ header{
     padding: 200px 12px;
 }
 
+/* Propuesta Educativa seccion */
 
 #prop-educativa{
     text-align: center;
@@ -203,7 +204,142 @@ header{
     
 }
 
+/* Seccion de porque elegirnos*/
 
-#porque-elegirnos{
+#porque-elegirnos .container{
+   text-align: center;
+    padding: 100px 15px;
     
 }
+
+#porque-elegirnos h2{
+    
+    margin: 0;
+}
+
+#porque-elegirnos li{
+    
+    margin: 14px 5px;
+    font-weight: bold;
+}
+
+/* Seccion de noticas */
+
+#ultimas-noticias{
+    text-align: center;
+    color: white;
+}
+#ultimas-noticias .container{
+padding: 100px 0px;
+
+}
+
+#ultimas-noticias .noticia{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.noticia:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/escuela.jpg");
+}
+
+.noticia:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/imagenes/lapiz.jpg");
+}
+
+/* Enlace al formulario */
+
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#formulario a{
+    text-align: center;
+    margin: 0;
+}
+
+/*Estilos del footer */
+
+footer{
+    background-color:#00425A;
+}
+
+footer p{
+margin: 0;
+color: #FC7300;
+padding: 12px;
+}
+
+footer .container{
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+
+/* Estilos del formulario en pestaña aparte */
+
+#form-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #EFF5F5;
+
+}
+
+
+form{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    padding: 50px 55px;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin: auto;
+}
+
+.datos-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2.5em;
+}
+
+.datos-form label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.datos-form input{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+/* Version para escritorio */
+
+
+
+

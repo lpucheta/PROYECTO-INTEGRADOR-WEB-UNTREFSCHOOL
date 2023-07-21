@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
     <title>UntrefSchool</title>
     <link rel="shortcut icon" sizes="16x16" href="imagenes/escuelaicon.png">
 </head>
-<body>
+<body id="form-body">
 <header>
-    <a href="#" class="logo">
+    <div class="container">
+    <a href="index.html" class="logo">
         <img src="/imagenes/colegiologo.png" alt="logo de la institucion">
         <h2 class="nombre-escuela">UNTREFSCHOOL</h2>
         </a>
+    </div>
 </header>
 
-
+<div id="form-cont">
     <form action="https://formsubmit.co/lucas.pucheta01@gmail.com" method="POST">
         <div class="datos-form">
             <div class="nombre">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                
             </div>
             <div class="email">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email">
+                
             </div>
             <div class="mensaje">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                
             </div>
             <div class="boton-form">
                 <input type="submit" value="Enviar" id="boton">
@@ -38,6 +49,6 @@
 
         </div>
     </form>
-    
+</div>
 </body>
 </html>
